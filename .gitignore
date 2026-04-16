@@ -1,0 +1,9 @@
+# raw assets — comment out if you want images versioned
+raw/assets/*.png
+raw/assets/*.jpg
+raw/assets/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/

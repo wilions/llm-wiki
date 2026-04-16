@@ -14,18 +14,18 @@ last_updated: 2026-04-16
 ## Entities
 
 ### Alloy Systems
-- [[entities/alloy-systems]] — Overview of alloy families covered in this wiki
+- [[entities/alloy-systems]] — Ti64, IN718, SS316L, AlSi10Mg, HEA/MPEA families
 
 ### AM Processes
-- [[entities/am-processes]] — L-PBF, EBM, DED process families
+- [[entities/am-processes]] — L-PBF, EBM, DED process families and key parameters
 
 ### Researchers
-- [[entities/researchers]] — Key researchers in the field
+- [[entities/researchers]] — Key researchers in AM and HEA fields
 
 ## Concepts
-- [[concepts/solidification]] — Solidification dynamics in AM
-- [[concepts/microstructure]] — Microstructure evolution and characterization
-- [[concepts/mechanical-properties]] — Strength, ductility, fatigue, fracture
+- [[concepts/solidification]] — Solidification dynamics, CET, melt pool, grain growth
+- [[concepts/microstructure]] — Phases, precipitates, texture, defect types
+- [[concepts/mechanical-properties]] — Strength, ductility, fatigue, fracture, anisotropy
 
 ## Syntheses
 *(none yet — filed query answers appear here)*

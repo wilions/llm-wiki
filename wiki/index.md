@@ -35,5 +35,8 @@ last_updated: 2026-04-16
 ## Syntheses
 *(none yet — filed query answers appear here)*
 
+## Maintenance
+- [[lint-2026-04-29]] — 3 errors, 5 warnings, 8 info items
+
 ## Log
 See [[log]]

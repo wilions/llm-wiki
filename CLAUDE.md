@@ -14,7 +14,7 @@ The human reads the wiki and directs analysis; you do the maintenance.
 
 | Path | Owner | Description |
 |------|-------|-------------|
-| `raw/` | Human | Immutable source documents (markdown clips, PDFs converted to text) |
+| `raw/` | Human | Immutable source documents — any format (see Supported Formats below) |
 | `raw/assets/` | Human | Images referenced in raw sources |
 | `wiki/` | Claude | All wiki pages — summaries, entities, concepts, syntheses |
 | `wiki/index.md` | Claude | Content catalog; updated on every ingest |
@@ -48,12 +48,39 @@ Contradictions or unresolved conflicts are marked:
 
 ---
 
+## Supported Formats
+
+Any file in `raw/` is acceptable. Non-markdown files must be preprocessed to markdown first:
+
+```bash
+python tools/preprocess.py raw/<file>          # converts in-place to raw/<stem>.md
+python tools/preprocess.py https://url         # fetches URL → raw/<slug>.md
+python tools/preprocess.py raw/figure.png --ai-images  # image with AI description
+```
+
+| Category | Formats | Notes |
+|----------|---------|-------|
+| Documents | PDF, DOCX, PPTX, XLSX, XLS, EPUB | Full text + tables extracted |
+| Structured data | CSV, JSON, XML | Rendered as markdown tables/code |
+| Images | JPEG, PNG, GIF, WebP | OCR text; add `--ai-images` for AI figure descriptions |
+| Audio | WAV, MP3 | Speech transcribed to text via Whisper |
+| Video | YouTube URLs | Transcript extracted automatically |
+| Web | HTTP/HTTPS URLs | Clean article text extracted |
+| Plain text | MD, TXT | Copied as-is (no conversion needed) |
+| Archives | ZIP | Contents iterated and converted |
+
+**Install once:** `pip install 'markitdown[all]'`
+
+After preprocessing, ingest the resulting `.md` file normally.
+
+---
+
 ## Operation: Ingest
 
 Triggered when the human says "ingest [filename]" or drops a file in `raw/`.
 
 Steps (do all in one session):
-1. Read the source file in `raw/`.
+1. If the file is not `.md` or `.txt`, preprocess it first: `python tools/preprocess.py raw/<file>`. Then read the resulting `.md` file in `raw/`.
 2. Discuss key takeaways with the human (2-3 questions max).
 3. Write a summary page to `wiki/sources/<slug>.md`.
 4. Update `wiki/index.md` — add the new source entry under the Sources section.

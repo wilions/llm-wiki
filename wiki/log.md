@@ -12,6 +12,10 @@ Append-only. Format: `## [YYYY-MM-DD] <operation> | <title>`
 ## [2026-04-16] init
 - Wiki initialized. Schema written. Seed entity and concept pages created.
 
+## [2026-04-16] lint
+- Orphans: 6 | Contradictions: 0 | Stubs: 5 | Dead links: 2 | Missing cross-refs: 7
+- Report: [[lint-2026-04-16]]
+
 ## [2026-04-16] ingest | MatGL: Materials Graph Library (Ko et al., 2025)
 - Summary page: [[sources/ko-2025-matgl]]
 - Pages created: [[entities/software-tools]], [[concepts/graph-neural-networks]], [[concepts/machine-learning-potentials]]

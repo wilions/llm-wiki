@@ -1,4 +1,4 @@
-# LLM Wiki — Schema
+# PW-Wiki — Schema
 
 ## Purpose
 This is a persistent, compounding knowledge base for materials-science research,

@@ -1,4 +1,4 @@
-# llm-wiki
+# PW-Wiki
 
 A persistent, compounding knowledge base for materials-science research — maintained by Claude, owned by you.
 
@@ -9,7 +9,7 @@ Focused on metal additive manufacturing (AM), high-entropy alloys (HEA/MPEA), an
 ## Structure
 
 ```
-llm-wiki/
+pw-wiki/
 ├── raw/              ← Drop source documents here (you own this, Claude never modifies it)
 │   └── assets/       ← Images referenced in raw sources
 ├── wiki/             ← All wiki pages (Claude owns this)

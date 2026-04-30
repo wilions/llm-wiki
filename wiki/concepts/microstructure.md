@@ -3,7 +3,7 @@ title: Microstructure
 type: concept
 tags: [microstructure, phase, texture, grain, precipitate, defects]
 sources: []
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Microstructure in AM Alloys
@@ -31,5 +31,10 @@ last_updated: 2026-04-16
 - **Hot cracking**: liquation cracking (grain boundary liquid films), solidification cracking.
 - **Residual stress**: tensile on surface, compressive in bulk (L-PBF); relieved by HT.
 - **Delamination / warping**: from residual stress + poor support strategy.
+
+## Related Pages
+- [[entities/alloy-systems]] — alloy-specific phases (Ti64 α', IN718 γ'', HEA sigma)
+- [[concepts/solidification]] — solidification conditions that produce these microstructures
+- [[concepts/mechanical-properties]] — how microstructure (grain size, texture, defects) drives properties
 
 > Update with citations as sources are ingested.

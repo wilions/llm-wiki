@@ -3,7 +3,7 @@ title: Solidification
 type: concept
 tags: [solidification, microstructure, grain, columnar, equiaxed, CET]
 sources: []
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Solidification in AM
@@ -32,5 +32,10 @@ fine microstructures, metastable phases, and strong crystallographic textures.
 ## Relevant Properties
 - G (thermal gradient, K/m), R (solidification rate, m/s), G·R = cooling rate
 - Undercooling ΔT drives nucleation; higher ΔT → finer grain size
+
+## Related Pages
+- [[entities/alloy-systems]] — martensite in Ti64, Laves in IN718, columnar grains in SS316L
+- [[entities/am-processes]] — L-PBF/EBM melt pool modes, VED, cooling rate regimes
+- [[concepts/microstructure]] — resulting phases and defects from solidification conditions
 
 > Update with citations as sources are ingested.

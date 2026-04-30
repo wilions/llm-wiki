@@ -3,7 +3,7 @@ title: Alloy Systems
 type: entity
 tags: [alloys, HEA, titanium, nickel, steel, aluminum]
 sources: []
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Alloy Systems
@@ -27,4 +27,10 @@ last_updated: 2026-04-16
 - **AlCoCrFeNi**: BCC/FCC dual-phase depending on Al content. Emerging AM research target.
 - **RHEAs**: Refractory MPEAs (W, Mo, Ta, Nb, Hf). High-temperature applications.
 
-> This page is seeded from domain knowledge. Update with `[[sources/...]]` citations on ingest.
+## Related Concepts
+- [[concepts/solidification]] — rapid cooling, martensite formation, columnar grain growth
+- [[concepts/microstructure]] — phases and precipitates (α', γ'', Laves), defect types
+- [[concepts/mechanical-properties]] — YS/UTS/elongation values per alloy system
+- [[entities/am-processes]] — process-alloy compatibility and defect mechanisms
+
+> Seeded from domain knowledge. Add source citations as papers are ingested.

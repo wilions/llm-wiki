@@ -3,7 +3,7 @@ title: Mechanical Properties
 type: concept
 tags: [strength, ductility, fatigue, fracture, hardness, anisotropy]
 sources: []
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Mechanical Properties of AM Alloys
@@ -32,5 +32,10 @@ last_updated: 2026-04-16
 ## Anisotropy
 - Build direction (Z) vs. horizontal (X, Y): differences in YS, ductility, fatigue.
 - Typically: horizontal specimens show higher ductility due to grain boundary orientation.
+
+## Related Pages
+- [[entities/alloy-systems]] — per-alloy YS/UTS/elongation data (Ti64, SS316L, IN718)
+- [[concepts/microstructure]] — phases, defects, and texture that control these properties
+- [[concepts/solidification]] — columnar grain formation driving anisotropy
 
 > Update with citations as sources are ingested.

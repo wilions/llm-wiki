@@ -3,7 +3,7 @@ title: AM Processes
 type: entity
 tags: [L-PBF, SLM, EBM, DED, WAAM, binder-jet]
 sources: []
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Additive Manufacturing Processes
@@ -29,4 +29,9 @@ last_updated: 2026-04-16
 - Binder printed onto powder bed; sintered post-process. No melt pool during build.
 - No residual stress from printing; shrinkage (~15-20%) during sintering.
 
-> This page is seeded from domain knowledge. Update with `[[sources/...]]` citations on ingest.
+## Related Concepts
+- [[concepts/solidification]] — melt pool dynamics, cooling rates, CET per process
+- [[concepts/microstructure]] — process-specific defects (porosity, hot cracking, residual stress)
+- [[entities/alloy-systems]] — which alloy systems are commonly processed by each method
+
+> Seeded from domain knowledge. Add source citations as papers are ingested.

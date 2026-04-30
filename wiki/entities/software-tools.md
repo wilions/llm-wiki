@@ -3,7 +3,7 @@ title: Software Tools
 type: entity
 tags: [software, tools, GNN, simulation, data, library]
 sources: [ko-2025-matgl]
-last_updated: 2026-04-16
+last_updated: 2026-04-30
 ---
 
 # Software Tools in Computational Materials Science
@@ -12,7 +12,7 @@ last_updated: 2026-04-16
 
 ### MatGL
 - **Full name:** Materials Graph Library
-- **Authors/Group:** [[researchers#ong-group|Ong group]] (UCSD) + [[researchers#ceder-group|Ceder group]] (Berkeley)
+- **Authors/Group:** [[entities/researchers#ong-group|Ong group]] (UCSD) + [[entities/researchers#ceder-group|Ceder group]] (Berkeley)
 - **Repo:** https://github.com/materialsvirtuallab/matgl
 - **Built on:** DGL (Deep Graph Library), Pymatgen, PyTorch Lightning
 - **Purpose:** Unified framework for GNN property models and MLIPs; "batteries included" with pre-trained foundation potentials
@@ -24,10 +24,10 @@ last_updated: 2026-04-16
 ### MACE
 - **Authors/Group:** Batatia et al. (Cambridge / DeepMind)
 - **Purpose:** Higher-order equivariant message passing; MACE-MP-0 / MACE-Large are leading general-purpose foundation potentials
-- **Status:** Planned MLIP for [[autoMD]] (alternative to MatGL FPs)
+- **Status:** Planned MLIP for future AM simulation integration (alternative to MatGL FPs)
 
 ### SevenNet-0
-- **Purpose:** Universal MLIP; considered alongside MACE-MP-0 for [[autoMD]]
+- **Purpose:** Universal MLIP; considered alongside MACE-MP-0 for future AM simulation work
 
 ### Nequip
 - **Authors/Group:** Batzner et al.
@@ -75,3 +75,9 @@ last_updated: 2026-04-16
 | MatPES-PBE-v2025.1 | 300K MD snapshots, DIRECT sampling (89 elements) | 434k | Foundation potential training |
 
 > ⚠️ **AM alloy gap:** None of these datasets specifically target AM alloy systems or far-from-equilibrium solidification conditions. See [[sources/ko-2025-matgl#known-limitations]].
+
+---
+
+## Related Concepts
+- [[concepts/machine-learning-potentials]] — theoretical background on MLIPs (GNNs, equivariance, training)
+- [[entities/researchers]] — groups behind MatGL, MACE, CHGNet
